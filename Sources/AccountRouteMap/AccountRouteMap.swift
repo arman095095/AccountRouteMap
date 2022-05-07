@@ -8,7 +8,8 @@ public protocol AccountRouteMap: AnyObject {
 }
 
 public protocol AccountModuleOutput: AnyObject {
-    func userSuccessAuthorized(account: AccountModelProtocol)
+    func userSuccessCreated(account: AccountModelProtocol)
+    func userSuccessEdited()
 }
 
 public protocol AccountModuleInput: AnyObject {
