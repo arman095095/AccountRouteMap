@@ -3,7 +3,7 @@ import Module
 import ModelInterfaces
 
 public protocol AccountRouteMap: AnyObject {
-    func createAccountModule() -> AccountModule
+    func createAccountModule(userID: String) -> AccountModule
     func editAccountModule() -> AccountModule
 }
 
